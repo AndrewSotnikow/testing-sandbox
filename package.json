@@ -42,7 +42,7 @@
     "start:client": "react-scripts start",
     "start:server": "nodemon --watch server server/index.mjs",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watch",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
