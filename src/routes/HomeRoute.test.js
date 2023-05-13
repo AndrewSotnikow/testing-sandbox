@@ -7,7 +7,7 @@ import HomeRoute from './HomeRoute';
 const handlers = [
     rest.get('/api/repositories', (req, res, ctx) => {
         const language = req.url.searchParams.get('q').split('language:')[1];
-
+        console.log(language)
         return res(
             ctx.json({
                 items: [
@@ -18,6 +18,7 @@ const handlers = [
         );
     }),
 ];
+
 const server = setupServer(...handlers);
 
 beforeAll(() => {
